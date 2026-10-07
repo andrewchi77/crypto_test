@@ -1,9 +1,6 @@
 hash_drbg_test: hash_drbg.o sha256_8u.o hash_drbg_test.c
 	gcc -g -o $@ $^
 
-rsa_test: arithmetic.o rsa.o sha256_8u.o rsa_test.c
-	gcc -g -o $@ $^
-
 ecdh_test: arithmetic.o ecurve.o ecdh.o ecdh_test.c
 	gcc -g -o $@ $^
 
